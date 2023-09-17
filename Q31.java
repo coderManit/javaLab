@@ -1,0 +1,19 @@
+// 31.
+importjava.util.Scanner;
+publicclassHCF{
+publicstaticvoidmain(String[]args){
+Scannerinput=newScanner(System.in);
+System.out.print("Enterthefirstnumber:");
+intnum1=input.nextInt();
+System.out.print("Enterthesecondnumber:");
+intnum2=input.nextInt();
+intsmaller=Math.min(num1,num2);
+inthcf=1;
+for(inti=1;i<=smaller;i++){
+if(num1%i==0&&num2%i==0){
+hcf=i;
+}
+}
+System.out.println("HCFof"+num1+"and"+num2+"is:"+hcf);
+}
+}

@@ -1,0 +1,22 @@
+// 29.
+importjava.util.Scanner;
+publicclassArmstrongNumber{
+publicstaticvoidmain(String[]args){
+Scannerinput=newScanner(System.in);
+System.out.print("Enteranumber:");
+intnumber=input.nextInt();
+intoriginalNumber=number;
+intsum=0;
+intnumDigits=(int)Math.log10(number)+1;
+while(number>0){
+intdigit=number%10;
+sum+=Math.pow(digit,numDigits);
+number/=10;
+}
+if(sum==originalNumber){
+System.out.println(originalNumber+"isanArmstrongnumber.");
+}else{
+System.out.println(originalNumber+"isnotanArmstrongnumber.");
+}
+}
+}

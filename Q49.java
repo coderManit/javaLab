@@ -1,0 +1,24 @@
+// 49.
+importjava.util.Scanner;
+publicclassReverseArray{
+publicstaticvoidmain(String[]args){
+Scannerinput=newScanner(System.in);
+System.out.print("Enterthenumberofelementsinthearray:");
+intn=input.nextInt();
+int[]arr=newint[n];
+System.out.println("Entertheelementsofthearray:");
+for(inti=0;i<n;i++){
+arr[i]=input.nextInt();
+}
+//Reversethearray
+for(inti=0;i<n/2;i++){
+inttemp=arr[i];
+arr[i]=arr[n-1-i];
+arr[n-1-i]=temp;
+}
+System.out.println("Reversedarray:");
+for(inti=0;i<n;i++){
+System.out.print(arr[i]+"");
+}
+}
+}

@@ -1,0 +1,22 @@
+// 24.
+importjava.util.Scanner;
+publicclassCGPACalculator{
+publicstaticvoidmain(String[]args){
+Scannerinput=newScanner(System.in);
+System.out.print("Enterthenumberofcourses:");
+intn=input.nextInt();
+doubletotalCredits=0;
+doubletotalGradePoints=0;
+System.out.println("Enterthecreditsandgradepointsforeachcourse:");
+for(inti=0;i<n;i++){
+System.out.print("Entercreditsforcourse"+(i+1)+":");
+doublecredits=input.nextDouble();
+System.out.print("Entergradepointsforcourse"+(i+1)+":");
+doublegradePoints=input.nextDouble();
+totalCredits+=credits;
+totalGradePoints+=credits*gradePoints;
+}
+doublecgpa=totalGradePoints/totalCredits;
+System.out.println("CGPA:"+cgpa);
+}
+}
